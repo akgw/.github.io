@@ -2,17 +2,29 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <!-- <inputtext v-model="val"></inputtext> -->
+    <h6>{{val}}</h6>
+    <InputSwitch v-model="checked" />
+
+
   </div>
 </template>
-
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import { defineComponent } from "@vue/composition-api";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import InputSwitch from 'primevue/inputswitch';
 
-@Options({
+export default defineComponent({
   components: {
-    HelloWorld
+    HelloWorld,
+    InputSwitch
+  },
+  setup () {
+
+    return {
+      val: 2,
+      checked: true
+    }
   }
 })
-export default class Home extends Vue {}
 </script>

@@ -22,3 +22,13 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## architecture
+### JavaScript framework
+https://v3.vuejs.org/
+
+### CSS framework
+https://primefaces.org/primevue/
+
+
