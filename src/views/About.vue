@@ -5,14 +5,14 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
-import ColorPicker from 'primevue/colorpicker';
+import { defineComponent } from '@vue/composition-api'
+import ColorPicker from 'primevue/colorpicker'
 
 export default defineComponent({
   components: {
     ColorPicker
   },
-  setup () {
+  setup() {
     return {
       color: '1976D2'
     }
