@@ -1,10 +1,53 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <TabMenu :model="items" />
   <router-view />
 </template>
+<script lang="ts">
+import TabMenu from 'primevue/tabmenu'
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  components: {
+    TabMenu
+  },
+  setup() {
+    return {
+      items: [
+        {
+          label: 'Home',
+          icon: 'pi pi-fw pi-home',
+          to: '/'
+        },
+        {
+          label: 'Histories',
+          icon: 'pi pi-fw pi-calendar',
+          to: '/histories'
+        },
+        {
+          label: 'Skills',
+          icon: 'pi pi-fw pi-pencil',
+          to: '/skills'
+        },
+        {
+          label: 'Qualifications',
+          icon: 'pi pi-fw pi-file',
+          to: '/qualifications'
+        },
+        {
+          label: 'SelfPR',
+          icon: 'pi pi-fw pi-file',
+          to: '/selfpr'
+        },
+        {
+          label: 'Interests',
+          icon: 'pi pi-fw pi-cog',
+          to: '/interests'
+        }
+      ]
+    }
+  }
+})
+</script>
 
 <style>
 #app {
