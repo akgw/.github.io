@@ -6,7 +6,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore .",
+    "lint:fix": "yarn lint --fix"
   },
   "husky": {
     "hooks": {
@@ -14,8 +16,8 @@
     }
   },
   "lint-staged": {
-    "*.@(ts|tsx)": [
-      "yarn lint"
+    "*.@(ts|tsx|vue)": [
+      "yarn lint:fix"
     ]
   },
   "dependencies": {
@@ -25,7 +27,13 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.3",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.0",
     "@nuxtjs/vuetify": "^1.11.3",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "nuxt-property-decorator": "^2.9.1"

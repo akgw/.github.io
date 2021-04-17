@@ -6,13 +6,13 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'nuxt-property-decorator';
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
-  @Component
-  export default class LayoutsDefault extends Vue {
-    @Prop({ required: false, default: () => null }) error: Object;
-    otherError = 'An error occurred';
-  }
+@Component
+export default class LayoutsDefault extends Vue {
+  @Prop({ required: false, default: () => null }) error: Object
+  otherError = 'An error occurred'
+}
 </script>
 
 <style scoped>
