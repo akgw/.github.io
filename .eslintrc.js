@@ -9,7 +9,6 @@ module.exports = {
       'plugin:nuxt/recommended',
       'plugin:prettier/recommended',
       'prettier',
-    //   'prettier/vue'
   ],
   plugins: [
       'vue'
@@ -18,5 +17,10 @@ module.exports = {
       'vue/html-closing-bracket-newline': 'off',
       'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
       'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  }
+  },
+  ignorePatterns: [
+      "/node_modules/**/*",
+      "/.nuxt/**/*",
+      "/docs/**/*"
+  ]
 };
