@@ -54,11 +54,6 @@ export default class LayoutsDefault extends Vue {
       icon: 'mdi-human-male-height'
     },
     {
-      path: '/qualifications',
-      text: 'Qualifications',
-      icon: 'mdi-card-account-details-outline'
-    },
-    {
       path: '/pr',
       text: 'PR',
       icon: 'mdi-sprout-outline'
