@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-bottom-navigation v-model="path" color="teal">
+    <v-bottom-navigation v-model="path" color="teal" fixed>
       <v-btn
         v-for="item in list"
         :key="item.path"
