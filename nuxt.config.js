@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+const path = require('path');
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -41,6 +42,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/device',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -74,5 +76,10 @@ export default {
     dir: 'docs'
   },
 
-  buildDir: 'docs'
+  buildDir: 'docs',
+
+  alias: {
+    '~': path.resolve(__dirname),
+    '@': path.resolve(__dirname)
+  }
 }
