@@ -13,7 +13,7 @@
             aspect-ratio="1"
             class="grey lighten-2"
           >
-            <v-expand-transition>
+            <v-expand-transition v-if="!isSp">
               <div
                 v-if="hover"
                 class="d-flex transition-fast-in-fast-out grey lighten-2 v-card--reveal black--text"
@@ -51,7 +51,13 @@ interface IImage {
   filepath: string
 }
 
-@Component
+@Component({
+  asyncData(context: any) {
+    return {
+      isSp: context.$device.isMobile
+    }
+  }
+})
 export default class PagesFavorites extends Vue {
   images: IImage[] = [
     {
