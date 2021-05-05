@@ -1,38 +1,13 @@
 <template>
   <v-col cols="12" sm="12" md="12">
-    <v-timeline dense>
+    <div v-if="isSp">
+      <div v-for="(item, i) in list" :key="i" color="teal" small>
+        <timelineItem :is-sp="isSp" :item="item" />
+      </div>
+    </div>
+    <v-timeline v-else dense>
       <v-timeline-item v-for="(item, i) in list" :key="i" color="teal" small>
-        <v-row justify="space-between">
-          <v-col class="text-left align-self-center" cols="2">
-            {{ item.date }}
-          </v-col>
-          <v-col cols="10" class="mt-10">
-            <h2 :class="`headline font-weight-light mb-4 teal--text`">
-              {{ item.title }}
-            </h2>
-            <h5 class="mb-5">~ {{ item.subtitle }} ~</h5>
-            <div>
-              <v-card
-                v-for="event in item.events"
-                :key="event.title"
-                class="mb-10"
-              >
-                <v-card-title class="text-h6">
-                  {{ event.title }}
-                </v-card-title>
-
-                <!-- eslint-disable-next-line vue/no-v-html -->
-                <v-card-subtitle v-html="event.description" />
-
-                <v-avatar v-if="event.image" class="ma-3" size="125" tile>
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
-                  ></v-img>
-                </v-avatar>
-              </v-card>
-            </div>
-          </v-col>
-        </v-row>
+        <timelineItem :is-sp="isSp" :item="item" />
       </v-timeline-item>
     </v-timeline>
   </v-col>
@@ -40,8 +15,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import timelineItem from '~/components/timelineItem.vue'
 
-interface IList {
+export interface ITimelineItem {
   title: string
   subtitle: string
   date: string
@@ -52,9 +28,18 @@ interface IList {
   }[]
 }
 
-@Component
+@Component({
+  components: {
+    timelineItem
+  },
+  asyncData(context: any) {
+    return {
+      isSp: context.$device.isMobile
+    }
+  }
+})
 export default class PagesCarrier extends Vue {
-  list: IList[] = [
+  list: ITimelineItem[] = [
     {
       title: '北陸先端科学技術大学院大学　入学',
       subtitle: 'グループウェアの研究と外部の発表に向けたシステム開発',
