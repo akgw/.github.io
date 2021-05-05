@@ -4,7 +4,7 @@
       <v-carousel-item v-for="page in pages" :key="page.title">
         <v-sheet :color="page.color" height="100%" tile>
           <v-row class="fill-height" align="center" justify="center">
-            <div>
+            <div class="pa-8">
               <h2 v-if="page.title">{{ page.title }}</h2>
               <p v-html="page.description" />
               <div
@@ -13,7 +13,11 @@
                 justify="center"
                 class="mt-8"
               >
-                <img :src="page.image" height="300px" />
+                <img
+                  :src="page.image"
+                  :height="isSp ? '150px' : '300px'"
+                  class="image_size"
+                />
               </div>
             </div>
           </v-row>
@@ -33,7 +37,13 @@ interface IPage {
   image: string
 }
 
-@Component
+@Component({
+  asyncData(context: any) {
+    return {
+      isSp: context.$device.isMobile
+    }
+  }
+})
 export default class PagesPr extends Vue {
   model = 0
 
@@ -71,3 +81,9 @@ export default class PagesPr extends Vue {
   ]
 }
 </script>
+<style scoped>
+.image_size {
+  max-width: 100%;
+  padding: 0 20px;
+}
+</style>
