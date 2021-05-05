@@ -6,8 +6,8 @@
           <a href="https://github.com/akgw"
             ><v-icon class="mr-4">mdi-github</v-icon></a
           >
-          <a href=">https://www.facebook.com/ryunosuke.akagawa"
-            ><v-icon class="mr-4">mdi-facebook</v-icon></a
+          <a href="https://www.facebook.com/ryunosuke.akagawa">
+            <v-icon class="mr-4">mdi-facebook</v-icon></a
           >
           <a href="mailto:ryu.akagawa@gmail.com"
             ><v-icon class="">mdi-gmail</v-icon></a
@@ -21,7 +21,7 @@
         </div>
         <div>
           <v-icon class="mr-2">mdi-facebook</v-icon>
-          <a href=">https://www.facebook.com/ryunosuke.akagawa"
+          <a href="https://www.facebook.com/ryunosuke.akagawa"
             >https://www.facebook.com/ryunosuke.akagawa</a
           >
         </div>
