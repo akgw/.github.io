@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-bottom-navigation v-model="path" color="teal" fixed>
+    <!-- <v-bottom-navigation v-model="path" color="teal" fixed>
       <v-btn
         v-for="item in list"
         :key="item.path"
@@ -10,7 +10,7 @@
         <span>{{ item.text }}</span>
         <v-icon>{{ item.icon }}</v-icon>
       </v-btn>
-    </v-bottom-navigation>
+    </v-bottom-navigation> -->
 
     <v-main>
       <v-container>
