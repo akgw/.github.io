@@ -1,17 +1,34 @@
 <template>
-  <v-col cols="12" sm="12" md="12">
-    <v-row>
-      <v-col cols="6" :class="className">
-        <githubIcon id="2399657" :is-sp="isSp" />
-        <accounts :is-sp="isSp" />
-      </v-col>
-      <v-col :cols="isSp ? 6 : 4" class="text-left align-self-center">
-        <positions :is-sp="isSp" />
-      </v-col>
-    </v-row>
+  <v-row no-gutters>
+    <v-col align="right" cols="5">
+      <githubIcon id="2399657" :is-sp="isSp" />
+      <accounts :is-sp="isSp" class="mt-4" />
 
-    <!-- carrier -->
-    <div v-if="isSp">
+      <h2 class="mt-4">Profile</h2>
+      <profile />
+
+      <h2 class="mt-4">Education</h2>
+      <education />
+
+      <h2 class="mt-4">Work Experience</h2>
+      <work-experience />
+
+      <!-- 
+        <v-col cols="6" :class="className">
+          <accounts :is-sp="isSp" />
+        </v-col>
+        <v-col :cols="isSp ? 6 : 4" class="text-left align-self-center">
+          <positions :is-sp="isSp" />
+        </v-col> -->
+    </v-col>
+    <v-col cols="2" />
+
+    <v-col align="left" cols="5">
+      <githubIcon id="2399657" :is-sp="isSp" />
+    </v-col>
+  </v-row>
+  <!-- carrier -->
+  <!-- <div v-if="isSp">
       <div v-for="(item, i) in list" :key="i" color="teal" small>
         <timelineItem :is-sp="isSp" :item="item" />
       </div>
@@ -30,10 +47,10 @@
         single-line
         hide-details
       />
-    </v-card-title>
+    </v-card-title> -->
 
-    <!-- skill -->
-    <v-data-table :headers="headers" :items="slist" :search="search">
+  <!-- skill -->
+  <!-- <v-data-table :headers="headers" :items="slist" :search="search">
       <template #[`item.name`]="{ item }" class="text-right align-self-center">
         <div class="text-center">
           <span class="pr-3">{{ item.name }}</span>
@@ -53,10 +70,10 @@
       <template #[`item.category`]="{ item }">
         <p :class="item.color">{{ item.category }}</p>
       </template>
-    </v-data-table>
+    </v-data-table> -->
 
-    <!-- pr -->
-    <v-carousel v-model="model">
+  <!-- pr -->
+  <!-- <v-carousel v-model="model">
       <v-carousel-item v-for="page in pages" :key="page.title">
         <v-sheet :color="page.color" height="100%" tile>
           <v-row class="fill-height" align="center" justify="center">
@@ -79,10 +96,10 @@
           </v-row>
         </v-sheet>
       </v-carousel-item>
-    </v-carousel>
+    </v-carousel> -->
 
-    <!-- favorites -->
-    <v-row>
+  <!-- favorites -->
+  <!-- <v-row>
       <v-col
         v-for="image in images"
         :key="imagePath(image)"
@@ -120,8 +137,7 @@
           </v-img>
         </v-hover>
       </v-col>
-    </v-row>
-  </v-col>
+    </v-row> -->
 </template>
 
 <script lang="ts">
@@ -537,7 +553,7 @@ export default class PagesIndex extends Vue {
     }
   ]
 
-    images: IImage[] = [
+  images: IImage[] = [
     {
       dirname: 'badminton',
       filepath: '0001.JPG'

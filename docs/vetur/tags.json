@@ -1,0 +1,26 @@
+{
+  "Accounts": {
+    "description": "Auto imported from components/accounts.vue"
+  },
+  "Education": {
+    "description": "Auto imported from components/education.vue"
+  },
+  "GithubIcon": {
+    "description": "Auto imported from components/githubIcon.vue"
+  },
+  "GrassGraph": {
+    "description": "Auto imported from components/grassGraph.vue"
+  },
+  "Positions": {
+    "description": "Auto imported from components/positions.vue"
+  },
+  "Profile": {
+    "description": "Auto imported from components/profile.vue"
+  },
+  "TimelineItem": {
+    "description": "Auto imported from components/timelineItem.vue"
+  },
+  "WorkExperience": {
+    "description": "Auto imported from components/work-experience.vue"
+  }
+}

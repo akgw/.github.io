@@ -1,35 +1,17 @@
 <template>
-  <v-row class="ml-4">
-    <v-col cols="10" :class="className">
-      <span v-if="isSp">
-        <div align="center" class="links">
-          <a href="https://github.com/akgw"
-            ><v-icon class="mr-4">mdi-github</v-icon></a
-          >
-          <a href="https://www.facebook.com/ryunosuke.akagawa">
-            <v-icon class="mr-4">mdi-facebook</v-icon></a
-          >
-          <a href="mailto:ryu.akagawa@gmail.com"
-            ><v-icon class="">mdi-gmail</v-icon></a
-          >
-        </div>
-      </span>
-      <span v-else>
-        <div>
+  <v-row>
+    <v-col>
+      <div class="links">
+        <a href="https://github.com/akgw">
           <v-icon class="mr-2">mdi-github</v-icon>
-          <a href="https://github.com/akgw">https://github.com/akgw</a>
-        </div>
-        <div>
+        </a>
+        <a href="https://www.facebook.com/ryunosuke.akagawa">
           <v-icon class="mr-2">mdi-facebook</v-icon>
-          <a href="https://www.facebook.com/ryunosuke.akagawa"
-            >https://www.facebook.com/ryunosuke.akagawa</a
-          >
-        </div>
-        <div>
+        </a>
+        <a href="mailto:ryu.akagawa@gmail.com">
           <v-icon class="mr-2">mdi-gmail</v-icon>
-          <a href="mailto:ryu.akagawa@gmail.com">ryu.akagawa@gmail.com</a>
-        </div>
-      </span>
+        </a>
+      </div>
     </v-col>
   </v-row>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <v-avatar :class="className">
+  <v-avatar :class="className" align="center">
     <img :src="`https://avatars.githubusercontent.com/u/${id}`" />
   </v-avatar>
 </template>

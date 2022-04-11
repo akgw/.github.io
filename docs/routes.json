@@ -1,0 +1,37 @@
+[
+  {
+    "name": "carrier",
+    "path": "/carrier",
+    "component": "/Users/1112599/Dev/akgw.github.io/pages/carrier.vue",
+    "chunkName": "pages/carrier",
+    "_name": "_625c4f70"
+  },
+  {
+    "name": "favorites",
+    "path": "/favorites",
+    "component": "/Users/1112599/Dev/akgw.github.io/pages/favorites.vue",
+    "chunkName": "pages/favorites",
+    "_name": "_4145ce27"
+  },
+  {
+    "name": "pr",
+    "path": "/pr",
+    "component": "/Users/1112599/Dev/akgw.github.io/pages/pr.vue",
+    "chunkName": "pages/pr",
+    "_name": "_6c4a99e2"
+  },
+  {
+    "name": "skills",
+    "path": "/skills",
+    "component": "/Users/1112599/Dev/akgw.github.io/pages/skills.vue",
+    "chunkName": "pages/skills",
+    "_name": "_502b8822"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/1112599/Dev/akgw.github.io/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5ba6f322"
+  }
+]
