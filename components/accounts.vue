@@ -3,13 +3,13 @@
     <v-col>
       <div class="links">
         <a href="https://github.com/akgw">
-          <v-icon class="mr-2">mdi-github</v-icon>
+          <v-icon class="mr-2 highlight--text">mdi-github</v-icon>
         </a>
         <a href="https://www.facebook.com/ryunosuke.akagawa">
-          <v-icon class="mr-2">mdi-facebook</v-icon>
+          <v-icon class="mr-2 highlight--text">mdi-facebook</v-icon>
         </a>
         <a href="mailto:ryu.akagawa@gmail.com">
-          <v-icon class="mr-2">mdi-gmail</v-icon>
+          <v-icon class="mr-2 highlight--text">mdi-gmail</v-icon>
         </a>
       </div>
     </v-col>

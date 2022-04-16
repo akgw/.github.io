@@ -1,6 +1,9 @@
 # carrier
 https://akgw.github.io/
 
+# color
+https://www.happyhues.co/palettes/8
+
 ## Build Setup
 
 ```bash

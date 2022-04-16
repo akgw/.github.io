@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col cols="12">
-      <v-list color="grey">
+      <v-list color="background">
         <v-list-item>
           <v-list-item-content class="text-no-wrap">
             <v-list-item-title v-text="'1. to be generalist'"></v-list-item-title>

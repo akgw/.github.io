@@ -1,13 +1,13 @@
 <template>
   <v-row>
     <v-col cols="12">
-      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="teal lighten-3" class="ma-1">
+      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="highlight" class="ma-1">
         <v-icon large>mdi-controller-classic</v-icon>
       </v-progress-circular>
-      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="teal lighten-3" class="ma-1">
+      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="highlight" class="ma-1">
         <v-icon large>mdi-badminton</v-icon>
       </v-progress-circular>
-      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="teal lighten-3" class="ma-1">
+      <v-progress-circular :rotate="-90" :size="80" :width="8" :value="100" color="highlight" class="ma-1">
         <v-icon large>mdi-campfire</v-icon>
       </v-progress-circular>
     </v-col>

@@ -2,7 +2,7 @@
   <v-row>
     <v-col>
       <v-timeline reverse dense>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2013.04 ~ 2016.03</v-list-item-subtitle>
@@ -15,7 +15,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-timeline-item>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2016.04 ~ 2017.10</v-list-item-subtitle>
@@ -28,7 +28,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-timeline-item>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2017.11 ~ 2022.06</v-list-item-subtitle>
@@ -41,7 +41,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-timeline-item>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2022.07 ~ </v-list-item-subtitle>

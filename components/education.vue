@@ -2,7 +2,7 @@
   <v-row>
     <v-col>
       <v-timeline reverse dense>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2009.04 ~ 2011.03</v-list-item-subtitle>
@@ -15,7 +15,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-timeline-item>
-        <v-timeline-item color="teal lighten-3" small fill-dot>
+        <v-timeline-item color="highlight" small fill-dot>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-subtitle>2011.04 ~ 2013.03</v-list-item-subtitle>

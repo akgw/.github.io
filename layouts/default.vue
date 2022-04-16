@@ -1,12 +1,12 @@
 <template>
-  <v-app :style="{ background: '#f5f5f5' }">
+  <v-app :style="{ background: '#f8f5f2' }">
     <v-main>
-      <v-container class="grey mt-16 mb-16">
+      <v-container class="#f8f5f2 mt-16 mb-16 buttonText--text">
         <nuxt />
       </v-container>
     </v-main>
 
-    <v-footer :absolute="true" app>
+    <v-footer :absolute="true" app class="secondary">
       <span>&copy; {{ new Date().getFullYear() }} ryunosuke akagawa</span>
     </v-footer>
   </v-app>
@@ -26,6 +26,6 @@ export default class LayoutsDefault extends Vue {
 </script>
 <style lang="scss">
 .v-progress-circular__underlay {
-  stroke: grey;
+  stroke: #222525;
 }
 </style>
