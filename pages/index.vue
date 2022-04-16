@@ -1,10 +1,10 @@
 <template>
   <v-row no-gutters>
-    <v-col align="right" cols="5">
-      <githubIcon id="2399657" :is-sp="isSp" />
-      <accounts :is-sp="isSp" class="mt-4" />
+    <v-col align="right" cols="6">
+      <images id="2399657" />
+      <accounts class="mt-4" />
 
-      <h2 class="mt-4">Profile</h2>
+      <h2 class="mt-8">Profile</h2>
       <profile />
 
       <h2 class="mt-4">Education</h2>
@@ -12,19 +12,24 @@
 
       <h2 class="mt-4">Work Experience</h2>
       <work-experience />
-
-      <!-- 
-        <v-col cols="6" :class="className">
-          <accounts :is-sp="isSp" />
-        </v-col>
-        <v-col :cols="isSp ? 6 : 4" class="text-left align-self-center">
-          <positions :is-sp="isSp" />
-        </v-col> -->
     </v-col>
-    <v-col cols="2" />
+    <v-col cols="1" />
 
-    <v-col align="left" cols="5">
-      <githubIcon id="2399657" :is-sp="isSp" />
+    <v-col cols="5">
+      <h2 class="mt-4">Skill</h2>
+      <engineer-skills />
+
+      <h2 class="mt-4">Other Skill</h2>
+      <other-skills />
+
+      <h2 class="mt-4">Influenced</h2>
+      <influenced />
+
+      <h2 class="mt-4">Mind</h2>
+      <mind />
+
+      <h2 class="mt-4">Hobby</h2>
+      <hobby />
     </v-col>
   </v-row>
   <!-- carrier -->
@@ -142,10 +147,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import githubIcon from '~/components/githubIcon.vue'
+import githubIcon from '~/components/images.vue'
 import accounts from '~/components/accounts.vue'
 import positions from '~/components/positions.vue'
-import grassGraph from '~/components/grassGraph.vue'
 const path = require('path')
 
 export interface ITimelineItem {
@@ -193,8 +197,7 @@ interface IImage {
   components: {
     githubIcon,
     accounts,
-    positions,
-    grassGraph
+    positions
   },
   asyncData(context: any) {
     return {
@@ -599,22 +602,19 @@ export default class PagesIndex extends Vue {
   infoList = [
     {
       dirname: 'badminton',
-      description:
-        'バドミントンは20年以上続けています。社会人サークルに所属し、練習や大会に参加しています。',
+      description: 'バドミントンは20年以上続けています。社会人サークルに所属し、練習や大会に参加しています。',
       icon: 'mdi-badminton',
       color: 'pink'
     },
     {
       dirname: 'camp',
-      description:
-        'ソロキャンプは2016年頃からしています。最近はコロナの影響で行けていません。',
+      description: 'ソロキャンプは2016年頃からしています。最近はコロナの影響で行けていません。',
       icon: 'mdi-campfire',
       color: 'cyan'
     },
     {
       dirname: 'monster_hunter',
-      description:
-        '有名所のゲームは大体やってますが、モンスターハンターが一番多くの時間を費やしました。',
+      description: '有名所のゲームは大体やってますが、モンスターハンターが一番多くの時間を費やしました。',
       icon: 'mdi-food-drumstick-outline',
       color: 'green'
     }

@@ -1,7 +1,7 @@
 <template>
   <v-app :style="{ background: '#f5f5f5' }">
     <v-main>
-      <v-container class="grey mt-16">
+      <v-container class="grey mt-16 mb-16">
         <nuxt />
       </v-container>
     </v-main>
@@ -24,3 +24,8 @@ export default class LayoutsDefault extends Vue {
   }
 }
 </script>
+<style lang="scss">
+.v-progress-circular__underlay {
+  stroke: grey;
+}
+</style>

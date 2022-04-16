@@ -1,13 +1,7 @@
 <template>
   <v-col cols="12" sm="12" md="12">
     <v-card-title>
-      <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Search Name"
-        single-line
-        hide-details
-      />
+      <v-text-field v-model="search" append-icon="mdi-magnify" label="Search Name" single-line hide-details />
     </v-card-title>
     <v-data-table :headers="headers" :items="list" :search="search">
       <template #[`item.name`]="{ item }" class="text-right align-self-center">
@@ -18,12 +12,8 @@
       </template>
 
       <template #[`item.level`]="{ item }">
-        <v-icon v-for="i of item.level" :key="`yellow-${i}`" color="yellow"
-          >mdi-star</v-icon
-        >
-        <v-icon v-for="i of 5 - item.level" :key="`white-${i}`" color="white"
-          >mdi-star</v-icon
-        >
+        <v-icon v-for="i of item.level" :key="`yellow-${i}`" color="yellow">mdi-star</v-icon>
+        <v-icon v-for="i of 5 - item.level" :key="`white-${i}`" color="white">mdi-star</v-icon>
       </template>
 
       <template #[`item.category`]="{ item }">

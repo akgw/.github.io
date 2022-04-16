@@ -7,17 +7,8 @@
             <div class="pa-8">
               <h2 v-if="page.title">{{ page.title }}</h2>
               <p v-html="page.description" />
-              <div
-                v-if="page.image"
-                align="center"
-                justify="center"
-                class="mt-8"
-              >
-                <img
-                  :src="page.image"
-                  :height="isSp ? '150px' : '300px'"
-                  class="image_size"
-                />
+              <div v-if="page.image" align="center" justify="center" class="mt-8">
+                <img :src="page.image" :height="isSp ? '150px' : '300px'" class="image_size" />
               </div>
             </div>
           </v-row>

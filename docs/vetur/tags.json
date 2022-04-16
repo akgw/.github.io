@@ -5,11 +5,26 @@
   "Education": {
     "description": "Auto imported from components/education.vue"
   },
+  "EngineerSkills": {
+    "description": "Auto imported from components/engineer-skills.vue"
+  },
   "GithubIcon": {
     "description": "Auto imported from components/githubIcon.vue"
   },
-  "GrassGraph": {
-    "description": "Auto imported from components/grassGraph.vue"
+  "Hobby": {
+    "description": "Auto imported from components/hobby.vue"
+  },
+  "Images": {
+    "description": "Auto imported from components/images.vue"
+  },
+  "Influenced": {
+    "description": "Auto imported from components/influenced.vue"
+  },
+  "Mind": {
+    "description": "Auto imported from components/mind.vue"
+  },
+  "OtherSkills": {
+    "description": "Auto imported from components/other-skills.vue"
   },
   "Positions": {
     "description": "Auto imported from components/positions.vue"

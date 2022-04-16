@@ -28,6 +28,32 @@
             </v-list-item-content>
           </v-list-item>
         </v-timeline-item>
+        <v-timeline-item color="teal lighten-3" small fill-dot>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <v-list-item-subtitle>2017.11 ~ 2022.06</v-list-item-subtitle>
+              <v-list-item-title>
+                SMS Co., Ltd.
+              </v-list-item-title>
+              <v-list-item-title>
+                株式会社エス・エム・エスキャリア
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-timeline-item>
+        <v-timeline-item color="teal lighten-3" small fill-dot>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <v-list-item-subtitle>2022.07 ~ </v-list-item-subtitle>
+              <v-list-item-title>
+                BuySell Technologies Co., Ltd.
+              </v-list-item-title>
+              <v-list-item-title>
+                株式会社BuySell Technologies
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-timeline-item>
       </v-timeline>
     </v-col>
   </v-row>

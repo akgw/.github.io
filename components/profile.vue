@@ -1,6 +1,9 @@
 <template>
   <v-row>
-    <v-col cols="12">
+    <v-col cols="6" align="right">
+      <github-icon id="2399657" />
+    </v-col>
+    <v-col cols="6">
       <v-list-item three-line>
         <v-list-item-content>
           <v-list-item-subtitle>Name</v-list-item-subtitle>

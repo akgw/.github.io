@@ -1,31 +1,13 @@
 <template>
   <v-col cols="12" sm="12" md="12">
     <v-row>
-      <v-col
-        v-for="image in images"
-        :key="imagePath(image)"
-        class="d-flex child-flex"
-        cols="4"
-      >
+      <v-col v-for="image in images" :key="imagePath(image)" class="d-flex child-flex" cols="4">
         <v-hover v-slot="{ hover }">
-          <v-img
-            :src="imagePath(image)"
-            aspect-ratio="1"
-            class="grey lighten-2"
-          >
+          <v-img :src="imagePath(image)" aspect-ratio="1" class="grey lighten-2">
             <v-expand-transition v-if="!isSp">
-              <div
-                v-if="hover"
-                class="d-flex transition-fast-in-fast-out grey lighten-2 v-card--reveal black--text"
-                style="height: 30%;"
-              >
+              <div v-if="hover" class="d-flex transition-fast-in-fast-out grey lighten-2 v-card--reveal black--text" style="height: 30%;">
                 <div>
-                  <v-chip
-                    class="ma-2"
-                    :color="info(image).color"
-                    label
-                    text-color="white"
-                  >
+                  <v-chip class="ma-2" :color="info(image).color" label text-color="white">
                     <v-icon left>{{ info(image).icon }}</v-icon>
                     {{ image.dirname }}
                   </v-chip>
@@ -105,22 +87,19 @@ export default class PagesFavorites extends Vue {
   infoList = [
     {
       dirname: 'badminton',
-      description:
-        'バドミントンは20年以上続けています。社会人サークルに所属し、練習や大会に参加しています。',
+      description: 'バドミントンは20年以上続けています。社会人サークルに所属し、練習や大会に参加しています。',
       icon: 'mdi-badminton',
       color: 'pink'
     },
     {
       dirname: 'camp',
-      description:
-        'ソロキャンプは2016年頃からしています。最近はコロナの影響で行けていません。',
+      description: 'ソロキャンプは2016年頃からしています。最近はコロナの影響で行けていません。',
       icon: 'mdi-campfire',
       color: 'cyan'
     },
     {
       dirname: 'monster_hunter',
-      description:
-        '有名所のゲームは大体やってますが、モンスターハンターが一番多くの時間を費やしました。',
+      description: '有名所のゲームは大体やってますが、モンスターハンターが一番多くの時間を費やしました。',
       icon: 'mdi-food-drumstick-outline',
       color: 'green'
     }

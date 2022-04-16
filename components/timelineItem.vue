@@ -2,20 +2,12 @@
   <v-row justify="space-between">
     <v-col class="text-left align-self-center" cols="2">{{ item.date }}</v-col>
     <v-col :cols="isSp ? 12 : 10" :class="isSp ? 'mt-2' : 'mt-4'">
-      <h4
-        :class="
-          `${isSp ? 'Heading 5' : 'headline'} font-weight-light mb-4 teal--text`
-        "
-      >
+      <h4 :class="`${isSp ? 'Heading 5' : 'headline'} font-weight-light mb-4 teal--text`">
         {{ item.title }}
       </h4>
       <h5 class="mb-5">~ {{ item.subtitle }} ~</h5>
       <div>
-        <v-card
-          v-for="event in item.events"
-          :key="event.title"
-          :class="isSp ? 'mb-2' : 'mb-10'"
-        >
+        <v-card v-for="event in item.events" :key="event.title" :class="isSp ? 'mb-2' : 'mb-10'">
           <v-card-title class="text-h6">{{ event.title }}</v-card-title>
 
           <!-- eslint-disable-next-line vue/no-v-html -->
