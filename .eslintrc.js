@@ -1,26 +1,15 @@
 module.exports = {
   root: true,
   env: {
-      browser: true,
-      node: true
+    browser: true,
+    node: true
   },
-  extends: [
-      '@nuxtjs/eslint-config-typescript',
-      'plugin:nuxt/recommended',
-      'plugin:prettier/recommended',
-      'prettier',
-  ],
-  plugins: [
-      'vue'
-  ],
+  extends: ['@nuxtjs/eslint-config-typescript', 'plugin:nuxt/recommended', 'plugin:prettier/recommended', 'prettier'],
+  plugins: ['vue'],
   rules: {
-      'vue/html-closing-bracket-newline': 'off',
-      'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-      'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/html-closing-bracket-newline': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
-  ignorePatterns: [
-      "/node_modules/**/*",
-      "/.nuxt/**/*",
-      "/docs/**/*"
-  ]
-};
+  ignorePatterns: ['/node_modules/**/*', '/.nuxt/**/*', '/docs/**/*']
+}

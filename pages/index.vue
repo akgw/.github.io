@@ -11,16 +11,16 @@
       <education />
 
       <h2 class="mt-4 headline--text">Work Experience</h2>
-      <work-experience />
+      <workExperience />
     </v-col>
     <v-col cols="1" />
 
     <v-col cols="5">
       <h2 class="mt-4 headline--text">Skill</h2>
-      <engineer-skills />
+      <engineerSkills />
 
       <h2 class="mt-4 headline--text">Other Skill</h2>
-      <other-skills />
+      <otherSkills />
 
       <h2 class="mt-4 headline--text">Influenced</h2>
       <influenced />
@@ -35,7 +35,32 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'nuxt-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
+import images from '~/components/images.vue'
+import accounts from '~/components/accounts.vue'
+import profile from '~/components/profile.vue'
+import education from '~/components/education.vue'
+import workExperience from '~/components/work-experience.vue'
+import engineerSkills from '~/components/engineer-skills.vue'
+import otherSkills from '~/components/other-skills.vue'
+import influenced from '~/components/influenced.vue'
+import mind from '~/components/mind.vue'
+import hobby from '~/components/hobby.vue'
+
+@Component({
+  components: {
+    images,
+    accounts,
+    profile,
+    education,
+    workExperience,
+    engineerSkills,
+    otherSkills,
+    influenced,
+    mind,
+    hobby
+  }
+})
 export default class PagesIndex extends Vue {
   isSp = false
 }

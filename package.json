@@ -6,8 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore .",
+    "generate": "rm -rf ./docs & nuxt generate",
+    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore ./*",
     "lint:fix": "yarn lint --fix"
   },
   "husky": {
