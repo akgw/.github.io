@@ -11,9 +11,7 @@ const components = {
   Influenced: () => import('../../components/influenced.vue' /* webpackChunkName: "components/influenced" */).then(c => wrapFunctional(c.default || c)),
   Mind: () => import('../../components/mind.vue' /* webpackChunkName: "components/mind" */).then(c => wrapFunctional(c.default || c)),
   OtherSkills: () => import('../../components/other-skills.vue' /* webpackChunkName: "components/other-skills" */).then(c => wrapFunctional(c.default || c)),
-  Positions: () => import('../../components/positions.vue' /* webpackChunkName: "components/positions" */).then(c => wrapFunctional(c.default || c)),
   Profile: () => import('../../components/profile.vue' /* webpackChunkName: "components/profile" */).then(c => wrapFunctional(c.default || c)),
-  TimelineItem: () => import('../../components/timelineItem.vue' /* webpackChunkName: "components/timeline-item" */).then(c => wrapFunctional(c.default || c)),
   WorkExperience: () => import('../../components/work-experience.vue' /* webpackChunkName: "components/work-experience" */).then(c => wrapFunctional(c.default || c))
 }
 

@@ -6,7 +6,7 @@
       </v-container>
     </v-main>
 
-    <v-footer :absolute="true" app class="secondary">
+    <v-footer :absolute="true" app class="highlight">
       <span>&copy; {{ new Date().getFullYear() }} ryunosuke akagawa</span>
     </v-footer>
   </v-app>

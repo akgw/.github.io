@@ -15,7 +15,5 @@ You can directly use them in pages and other components without the need to impo
 - `<Influenced>` | `<influenced>` (components/influenced.vue)
 - `<Mind>` | `<mind>` (components/mind.vue)
 - `<OtherSkills>` | `<other-skills>` (components/other-skills.vue)
-- `<Positions>` | `<positions>` (components/positions.vue)
 - `<Profile>` | `<profile>` (components/profile.vue)
-- `<TimelineItem>` | `<timeline-item>` (components/timelineItem.vue)
 - `<WorkExperience>` | `<work-experience>` (components/work-experience.vue)
