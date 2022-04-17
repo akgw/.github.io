@@ -11,9 +11,10 @@ export default class GithubIcon extends Vue {
   @Prop({ required: true }) id: number
   @Prop({ required: false }) isSp: boolean
   className = 'size'
+  $device: any
 
   created() {
-    if (this.isSp) {
+    if (this.$device.isMobile) {
       this.className += '__sp'
     }
   }
@@ -26,8 +27,8 @@ export default class GithubIcon extends Vue {
   background-color: white;
 
   &__sp {
-    height: 50px !important;
-    width: 50px !important;
+    height: 100px !important;
+    width: 100px !important;
     background-color: white;
   }
 }

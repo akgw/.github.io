@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="10">
+    <v-col cols="12">
       <div class="d-flex justify-space-around">
         <progress-circular :value="90" icon="mdi-laravel" />
         <progress-circular :value="30" icon="mdi-language-ruby-on-rails" />

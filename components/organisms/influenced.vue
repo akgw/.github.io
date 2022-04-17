@@ -7,6 +7,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4873114799&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=4873114799"
@@ -21,6 +22,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B073GSDBGT&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=B073GSDBGT"
@@ -35,6 +37,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07JK7FZH2&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=B07JK7FZH2"
@@ -49,6 +52,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4873116309&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=4873116309"
@@ -65,6 +69,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01N2672CU&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=B01N2672CU"
@@ -79,6 +84,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00MTL340G&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=B00MTL340G"
@@ -93,6 +99,7 @@
           target="_blank"
           ><img
             border="0"
+            :width="width"
             src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00KD2IK4S&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=akgw-22&language=ja_JP"/></a
         ><img
           src="https://ir-jp.amazon-adsystem.com/e/ir?t=akgw-22&language=ja_JP&l=li2&o=9&a=B00KD2IK4S"
@@ -110,5 +117,13 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 @Component
-export default class Influenced extends Vue {}
+export default class Influenced extends Vue {
+  width = '80px'
+  $device: any
+  created() {
+    if (!this.$device.isMobile) {
+      this.width = 'auto'
+    }
+  }
+}
 </script>
