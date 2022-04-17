@@ -108,25 +108,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 @Component
-export default class OtherSkills extends Vue {
-  @Prop({ required: true }) isSp: boolean
-  className = 'size'
-
-  created() {
-    if (this.isSp) {
-      this.className += '__sp'
-    }
-  }
-}
+export default class Influenced extends Vue {}
 </script>
-<style lang="scss" scoped>
-.size {
-  margin-top: 20px;
-
-  &__sp {
-    margin-top: 12px;
-  }
-}
-</style>

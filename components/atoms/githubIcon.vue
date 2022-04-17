@@ -1,6 +1,6 @@
 <template>
   <v-avatar :class="className">
-    <img :src="`https://avatars.githubusercontent.com/u/${id}`" />
+    <v-img :src="`https://avatars.githubusercontent.com/u/${id}`" />
   </v-avatar>
 </template>
 
@@ -9,7 +9,7 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
 @Component
 export default class GithubIcon extends Vue {
   @Prop({ required: true }) id: number
-  @Prop({ required: true }) isSp: boolean
+  @Prop({ required: false }) isSp: boolean
   className = 'size'
 
   created() {
