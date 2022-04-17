@@ -49,7 +49,16 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/sitemap',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'G-F6V238JDLN',
+        debug: false
+      }
+    ]
+  ],
   sitemap: {
     hostname: 'https://akgw.github.io',
     path: '/sitemap.xml',

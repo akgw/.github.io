@@ -29,6 +29,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.0",
+    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/vuetify": "^1.11.3",
     "eslint": "^7.24.0",
