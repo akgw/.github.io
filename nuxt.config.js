@@ -54,7 +54,7 @@ export default {
     [
       '@nuxtjs/google-gtag',
       {
-        id: 'G-F6V238JDLN',
+        id: 'G-RR6NJMGX5V',
         debug: false
       }
     ]
